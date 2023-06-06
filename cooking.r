@@ -1,4 +1,6 @@
-cooking <- function(AC, cooksd, PESO_SP, PUERTO2, ESPECIE, ESTRATO_RIM, sp3, MN, FECHA) {
+cooking <- function
+         (AC, cooksd, PESO_SP, PUERTO2, ESPECIE, ESTRATO_RIM, sp3, MN, FECHA)
+{
 temp_plot  <-ggplot(data =AC,
          mapping = aes(y = cooksd, x=TALLA_MEDIA_MAREA, col=factor(PUERTO2)))  +
     geom_quasirandom(aes(colour = PUERTO2, size=2,x=TALLA_MEDIA_MAREA, y=cooksd  ),
